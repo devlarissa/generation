@@ -27,6 +27,6 @@ public class IdadeEmDias {
 		int idadeEmDias = (anos * 365) + (meses * 12) + dias;
 		
 		System.out.println("Sua idade em dias é de " + idadeEmDias + " dias");
-		
+		ler.close();
 	}
 }

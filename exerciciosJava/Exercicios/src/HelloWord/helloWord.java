@@ -28,6 +28,10 @@ public class helloWord {
 		y = Math.pow(x, 3);
 		x = 3 % 3;
 		x = Math.sqrt(atual);
+		
+		System.out.printf("%.2f, %.2f", x, y);
+		
+		ler.close();
 	}
 	
 }

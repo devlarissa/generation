@@ -31,5 +31,6 @@ public class CalcularExpressao {
 		D = (R + S) / 2;
 		
 		System.out.printf("O valor de D é de %.2f", D);
+		ler.close();
 	}
 }

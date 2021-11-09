@@ -41,5 +41,6 @@ public class ValoresXeY {
 		y = (a * f - c * d) / (a * e - b * d);
 		
 		System.out.printf("Os valores de x e y são de %.2f e %.2f", x, y);
+		ler.close();
 	}
 }

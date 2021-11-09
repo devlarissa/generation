@@ -23,5 +23,7 @@ public class CustoDoCarro {
 		custoFinal = custoInicial + (custoInicial * 0.28) + (custoInicial * 0.45);
 		
 		System.out.printf("O custo final do carro foi de R$ %.2f", custoFinal);
+		
+		ler.close();
 	}
 }

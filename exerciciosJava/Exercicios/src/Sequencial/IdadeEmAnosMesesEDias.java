@@ -26,5 +26,6 @@ public class IdadeEmAnosMesesEDias {
 		dias = dias % 30;
 		
 		System.out.print("Sua idade é de " + anos + " anos, " + meses + " meses e " + dias + " dias");
+		leia.close();
 	}
 }

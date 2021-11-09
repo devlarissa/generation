@@ -25,6 +25,6 @@ public class DuracaoEvento {
 		segundos = segundos % 60;
 		
 		System.out.print("Seu evento durou " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos");
-		
+		ler.close();
 	}
 }

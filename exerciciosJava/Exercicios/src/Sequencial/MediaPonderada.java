@@ -28,6 +28,6 @@ public class MediaPonderada {
 		
 		System.out.printf("A media foi de %.2f", media);
 		
-		
+		ler.close();
 	}
 }

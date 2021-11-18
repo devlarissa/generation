@@ -10,7 +10,11 @@ public class Animal {
 	}
 	
 	public void emitirSom(){
-		System.out.println("Emitindo som");
+		
+	}
+	
+	public void locomocao(){
+		System.out.println(getNome() + " correndo");
 	}
 
 	public String getNome() {

@@ -6,15 +6,15 @@ public class Cachorro extends Animal {
 		super(nome, idade);
 	}
 	
-	public void correr() {
-		System.out.println(getNome() + " correndo");
+	public void emitirSom() {
+		System.out.println("latindo");
 	}
 	
 	public void cachorroInfo() {
 		System.out.println("O nome do cachorro é " + getNome());
 		System.out.println("A idade é " + getIdade());
-		System.out.println("Chamando o metodo correr : ");
-		correr();
+		System.out.println("Chamando o metodo locomocao : ");
+		locomocao();
 		emitirSom();
 		
 	}

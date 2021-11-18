@@ -6,7 +6,17 @@ public class Cavalo extends Animal {
 		super(nome, idade);
 	}
 	
-	public void correr() {
-		System.out.println(getNome() + " correndo");
+	@Override
+	public void emitirSom() {
+		System.out.println("relinchando");
+	}
+	
+	public void cavaloInfo() {
+		System.out.println("O nome do cavalo é " + getNome());
+		System.out.println("A idade é " + getIdade());
+		System.out.println("Chamando o metodo locomocao : ");
+		locomocao();
+		emitirSom();
+		
 	}
 }

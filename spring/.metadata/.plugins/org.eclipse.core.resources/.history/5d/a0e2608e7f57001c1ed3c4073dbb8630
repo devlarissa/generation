@@ -1,0 +1,7 @@
+package br.org.generation.minhalojadegames.model;
+
+@Entity
+@Table("tb_produtos")
+public class Produto {
+
+}

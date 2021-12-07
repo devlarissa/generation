@@ -39,9 +39,7 @@ public class PostagemController {
 	
 	@GetMapping("/{id}")
 	public ResponseEntity <Postagem> getById(@PathVariable Long id){
-		return postagemRepository.findById(id)
-				.map(resp -> ResponseEntity.ok(resp))
-				.orElse(ResponseEntity.notFound().build());
+		return postagemRepository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 		// é o mesmo no mysql que: select * from tb_postagens where id = id;
 	}
 	

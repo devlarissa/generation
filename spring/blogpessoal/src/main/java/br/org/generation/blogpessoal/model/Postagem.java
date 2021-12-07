@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -13,26 +14,31 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.UpdateTimestamp;
 
-@Entity    // create table
-@Table(name = "tb_postagens")   //tb_postagens
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@Entity // create table
+@Table(name = "tb_postagens") // tb_postagens
 public class Postagem {
 
-	@Id       // primary key ( id )
-	@GeneratedValue(strategy = GenerationType.IDENTITY)  // autoincrement
+	@Id // primary key ( id )
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // autoincrement
 	private Long id;
-	
-	@NotBlank(message = "O atributo titulo é obrigatorio")   // not null e não branco
+
+	@NotBlank(message = "O atributo titulo é obrigatorio") // not null e não branco
 	@Size(min = 5, max = 100, message = "O atributo titulo deve ter no minimo 5 e maximo 100 caracteres")
 	private String titulo;
-	
-	@NotNull(message = "O atributo texto é obrigatorio")   // not null e não branco
+
+	@NotNull(message = "O atributo texto é obrigatorio") // not null e não branco
 	@Size(min = 10, max = 1000, message = "O atributo texto deve ter no minimo 10 e maximo 1000 caracteres")
 	private String texto;
-	
+
 	@UpdateTimestamp
 	private LocalDate data;
-	
-	
+
+	@ManyToOne
+	@JsonIgnoreProperties("postagem")
+	private Tema tema;
+
 	public Long getId() {
 		return id;
 	}
@@ -64,6 +70,13 @@ public class Postagem {
 	public void setData(LocalDate data) {
 		this.data = data;
 	}
-	
-	
+
+	public Tema getTema() {
+		return tema;
+	}
+
+	public void setTema(Tema tema) {
+		this.tema = tema;
+	}
+
 }

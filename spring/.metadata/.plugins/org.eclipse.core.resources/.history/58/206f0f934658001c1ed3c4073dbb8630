@@ -1,0 +1,5 @@
+package br.org.generation.farmaciadobem.repository;
+
+public interface CategoriaRepository {
+
+}

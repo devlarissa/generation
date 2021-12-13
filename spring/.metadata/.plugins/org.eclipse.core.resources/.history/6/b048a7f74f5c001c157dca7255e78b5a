@@ -1,0 +1,9 @@
+package br.org.generation.blogpessoal.model;
+
+public class UsuarioLogin {
+
+	private String nome;
+	private String usuario;
+	private String senha;
+	private String foto;
+}

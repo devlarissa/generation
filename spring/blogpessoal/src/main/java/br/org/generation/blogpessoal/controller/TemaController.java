@@ -26,7 +26,7 @@ public class TemaController {
 	@Autowired
 	private TemaRepository repository;
 	
-	@GetMapping
+	@GetMapping("/todos")
 	public ResponseEntity<List<Tema>> getAll(){
 		 return ResponseEntity.ok(repository.findAll());
 	}
@@ -44,13 +44,13 @@ public class TemaController {
 		return ResponseEntity.ok(repository.findAllByDescricaoContainingIgnoreCase(descricao));
 	}
 	
-	@PostMapping
+	@PostMapping("/cadastrar")
 	public ResponseEntity<Tema> post(@RequestBody Tema tema){
 		
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(tema));
 	}
 	
-	@PutMapping
+	@PutMapping("/atualizar")
 	public ResponseEntity<Tema> put(@RequestBody Tema tema){
 		
 		return ResponseEntity.ok(repository.save(tema));

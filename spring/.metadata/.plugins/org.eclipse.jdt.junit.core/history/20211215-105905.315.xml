@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun UsuarioControllerTest" project="blogpessoal" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="br.org.generation.blogpessoal.controller.UsuarioControllerTest" time="1.081" displayname="UsuarioControllerTest" uniqueid="[engine:junit-jupiter]/[class:br.org.generation.blogpessoal.controller.UsuarioControllerTest]">
+    <testcase name="deveCriarUmUsuario" classname="br.org.generation.blogpessoal.controller.UsuarioControllerTest" time="0.942" displayname="Cadastrar Um Usuário" uniqueid="[engine:junit-jupiter]/[class:br.org.generation.blogpessoal.controller.UsuarioControllerTest]/[method:deveCriarUmUsuario()]"/>
+    <testcase name="naoDeveDuplicarUsuario" classname="br.org.generation.blogpessoal.controller.UsuarioControllerTest" time="0.139" displayname="Não deve permitir duplicação do Usuário" uniqueid="[engine:junit-jupiter]/[class:br.org.generation.blogpessoal.controller.UsuarioControllerTest]/[method:naoDeveDuplicarUsuario()]"/>
+  </testsuite>
+</testrun>

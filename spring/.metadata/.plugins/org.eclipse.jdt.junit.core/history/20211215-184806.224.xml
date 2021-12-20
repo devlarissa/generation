@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TemaRepositoryTest" project="blogpessoal" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="br.org.generation.blogpessoal.repository.TemaRepositoryTest" time="0.756" displayname="TemaRepositoryTest" uniqueid="[engine:junit-jupiter]/[class:br.org.generation.blogpessoal.repository.TemaRepositoryTest]">
+    <testcase name="deveRetornarTresDescricoesDeTemas" classname="br.org.generation.blogpessoal.repository.TemaRepositoryTest" time="0.756" displayname="Retorna 1 tema" uniqueid="[engine:junit-jupiter]/[class:br.org.generation.blogpessoal.repository.TemaRepositoryTest]/[method:deveRetornarTresDescricoesDeTemas()]"/>
+  </testsuite>
+</testrun>

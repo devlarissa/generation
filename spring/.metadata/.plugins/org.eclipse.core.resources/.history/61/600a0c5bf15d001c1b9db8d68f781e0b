@@ -1,0 +1,34 @@
+package br.org.generation.blogpessoal.controller;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.TestMethodOrder;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.boot.test.web.client.TestRestTemplate;
+
+import br.org.generation.blogpessoal.service.UsuarioService;
+
+
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+public class TemaControllerTest {
+
+	@Autowired
+	private TestRestTemplate testRestTemplate;
+	
+	@Autowired
+	private UsuarioService usuarioService;
+	
+	@Test
+	@Order(1)
+	@DisplayName("Cadastrar Tema")
+	public void deveCriarUmUsuario() {
+		
+	}
+}

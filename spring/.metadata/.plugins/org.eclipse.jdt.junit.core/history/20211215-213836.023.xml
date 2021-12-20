@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun TemaControllerTest" project="blogpessoal" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="br.org.generation.blogpessoal.controller.TemaControllerTest" time="1.257" displayname="TemaControllerTest" uniqueid="[engine:junit-jupiter]/[class:br.org.generation.blogpessoal.controller.TemaControllerTest]">
+    <testcase name="deveCriarUmTema" classname="br.org.generation.blogpessoal.controller.TemaControllerTest" time="1.074" displayname="Cadastrar Um Tema" uniqueid="[engine:junit-jupiter]/[class:br.org.generation.blogpessoal.controller.TemaControllerTest]/[method:deveCriarUmTema()]"/>
+    <testcase name="naoDeveCriarTema" classname="br.org.generation.blogpessoal.controller.TemaControllerTest" time="0.019" displayname="Não deve permitir a criacao de um tema" uniqueid="[engine:junit-jupiter]/[class:br.org.generation.blogpessoal.controller.TemaControllerTest]/[method:naoDeveCriarTema()]"/>
+    <testcase name="deveAlterarTema" classname="br.org.generation.blogpessoal.controller.TemaControllerTest" time="0.163" displayname="Alterar um Tema" uniqueid="[engine:junit-jupiter]/[class:br.org.generation.blogpessoal.controller.TemaControllerTest]/[method:deveAlterarTema()]"/>
+  </testsuite>
+</testrun>

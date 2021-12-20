@@ -1,0 +1,27 @@
+package br.org.generation.blogpessoal.repository;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.TestInstance;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+
+import br.org.generation.blogpessoal.model.Tema;
+
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+public class TemaRepositoryTest {
+
+	@Autowired
+	private TemaRepository temaRepository;
+	
+	@BeforeAll
+	void start() {
+		
+		temaRepository.save(new Tema(0L, " Esportes Teste"));
+		temaRepository.save(new Tema(0L, "Aventura Teste"));
+		temaRepository.save(new Tema(0L, "DIY Teste"));
+		temaRepository.save(new Tema(0L, "Suspense"));
+		
+	}
+}

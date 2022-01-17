@@ -1,0 +1,129 @@
+body{
+    margin: 0px;
+}
+
+/* pagina index */
+
+.header{
+    background-color: lightgreen;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo{
+    margin-left: 40px;
+}
+
+.titulo > a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar{
+    /* background-color: silver; */
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+}
+
+.link-page{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.link-page:hover{
+    background-color: rgb(125, 207, 125);
+}
+
+.nav-bar > ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+.main{
+    margin: 0px 50px 0px 50px;
+}
+
+.titulo-conteudo{
+    display: flex;
+    justify-content: center;
+}
+
+.section-about{
+    display: flex;
+}
+
+.image-main{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10%;
+}
+
+.section-video{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+}
+
+.icon{
+    margin-left: 10px;
+    color: black;
+}
+
+/* Pagina contato */
+
+.contato{
+    display: flex;
+    justify-content: center;
+}
+
+.container-contato{
+    width: 350px;
+}
+
+.endereco{
+    margin-left: 30px;
+}
+
+.text-area{
+    display: flex;
+    align-items: flex-start;
+}
+
+.mt{
+    margin-top: 25px;
+}
+
+#submit-button{
+    background-color:rgb(125, 207, 125);
+    color: white;
+    border: none;
+    height: 30px;
+    width: 60px;
+    border-radius: 10%;
+}
+
+.submit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#submit-button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
